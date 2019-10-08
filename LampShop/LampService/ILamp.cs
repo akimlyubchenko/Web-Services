@@ -3,7 +3,7 @@ using System.ServiceModel;
 
 namespace LampService
 {
-	[ServiceContract]
+	[ServiceContract(Namespace = "LampService")]
 	public interface ILamp
 	{
 		[OperationContract]

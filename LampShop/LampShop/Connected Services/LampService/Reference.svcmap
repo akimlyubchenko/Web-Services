@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="9cc595df-4a38-4516-b81f-807093d8e81f" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:1224/Lamp.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="Lamp.wsdl" MetadataType="Wsdl" ID="32b8cf2a-b4fd-476e-86bc-fe4807959444" SourceId="1" SourceUrl="http://localhost:1224/Lamp.svc?wsdl" />
+    <MetadataFile FileName="Lamp.xsd" MetadataType="Schema" ID="5928caf3-791d-401d-98dc-e79bd81b452f" SourceId="1" SourceUrl="http://localhost:1224/Lamp.svc?xsd=xsd1" />
+    <MetadataFile FileName="Lamp1.wsdl" MetadataType="Wsdl" ID="c744278f-b2db-497b-98cd-0f56962c9a5b" SourceId="1" SourceUrl="http://localhost:1224/Lamp.svc?wsdl=wsdl0" />
+    <MetadataFile FileName="Lamp1.xsd" MetadataType="Schema" ID="a90fb194-8aac-40e4-a1fc-7aefa8f1379c" SourceId="1" SourceUrl="http://localhost:1224/Lamp.svc?xsd=xsd2" />
+    <MetadataFile FileName="Lamp2.xsd" MetadataType="Schema" ID="1457ee4c-64aa-4a8f-8879-56d0ec856cec" SourceId="1" SourceUrl="http://localhost:1224/Lamp.svc?xsd=xsd0" />
+    <MetadataFile FileName="Lamp.disco" MetadataType="Disco" ID="5d313a55-0b33-457d-a126-4b3153f30811" SourceId="1" SourceUrl="http://localhost:1224/Lamp.svc?disco" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

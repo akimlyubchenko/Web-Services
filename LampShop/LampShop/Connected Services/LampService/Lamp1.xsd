@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/LampService.Model" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/LampService.Model" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:complexType name="ArrayOfLamp">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Lamp" nillable="true" type="tns:Lamp" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfLamp" nillable="true" type="tns:ArrayOfLamp" />
+  <xs:complexType name="Lamp">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Description" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Id" type="xs:int" />
+      <xs:element minOccurs="0" name="LightBulb" nillable="true" type="tns:LightBulb" />
+      <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Price" type="xs:double" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Lamp" nillable="true" type="tns:Lamp" />
+  <xs:complexType name="LightBulb">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Id" type="xs:int" />
+      <xs:element minOccurs="0" name="LightBulbTint" type="tns:LightBulbTint" />
+      <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="LightBulb" nillable="true" type="tns:LightBulb" />
+  <xs:simpleType name="LightBulbTint">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Light" />
+      <xs:enumeration value="Dim" />
+      <xs:enumeration value="Yellow" />
+      <xs:enumeration value="Motley" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="LightBulbTint" nillable="true" type="tns:LightBulbTint" />
+</xs:schema>

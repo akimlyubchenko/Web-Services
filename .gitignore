@@ -11,6 +11,7 @@
 *.sln.docstates
 *.sln
 .csproj
+*.svc
 # User-specific files (MonoDevelop/Xamarin Studio)
 *.userprefs
 
@@ -356,3 +357,15 @@ MigrationBackup/
 /LampShop/LampService/Web.Debug.config
 /LampShop/LampService/Web.Release.config
 /LampShop/LampService/Properties/AssemblyInfo.cs
+/LampShop/LampShop/Scripts
+/LampShop/LampShop/Web.Release.config
+/LampShop/LampShop/Web.Debug.config
+/LampShop/LampShop/Properties
+/LampShop/LampShop/packages.config
+/LampShop/LampShop/LampShop.csproj
+/LampShop/LampShop/Global.asax
+/LampShop/LampShop/fonts
+/LampShop/LampShop/favicon.ico
+/LampShop/LampShop/Content
+/LampShop/LampShop/Connected Services/LocalLampService
+/LampShop/LampShop/ApplicationInsights.config
