@@ -9,222 +9,17 @@
 //------------------------------------------------------------------------------
 
 namespace LampShop.LampService {
-    using System.Runtime.Serialization;
-    using System;
     
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
-    [System.Runtime.Serialization.DataContractAttribute(Name="Lamp", Namespace="http://schemas.datacontract.org/2004/07/LampService.Model")]
-    [System.SerializableAttribute()]
-    public partial class Lamp : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
-        
-        [System.NonSerializedAttribute()]
-        private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string DescriptionField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private int IdField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private LampShop.LampService.LightBulb LightBulbField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string NameField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private double PriceField;
-        
-        [global::System.ComponentModel.BrowsableAttribute(false)]
-        public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
-            get {
-                return this.extensionDataField;
-            }
-            set {
-                this.extensionDataField = value;
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public string Description {
-            get {
-                return this.DescriptionField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.DescriptionField, value) != true)) {
-                    this.DescriptionField = value;
-                    this.RaisePropertyChanged("Description");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public int Id {
-            get {
-                return this.IdField;
-            }
-            set {
-                if ((this.IdField.Equals(value) != true)) {
-                    this.IdField = value;
-                    this.RaisePropertyChanged("Id");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public LampShop.LampService.LightBulb LightBulb {
-            get {
-                return this.LightBulbField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.LightBulbField, value) != true)) {
-                    this.LightBulbField = value;
-                    this.RaisePropertyChanged("LightBulb");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public string Name {
-            get {
-                return this.NameField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.NameField, value) != true)) {
-                    this.NameField = value;
-                    this.RaisePropertyChanged("Name");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public double Price {
-            get {
-                return this.PriceField;
-            }
-            set {
-                if ((this.PriceField.Equals(value) != true)) {
-                    this.PriceField = value;
-                    this.RaisePropertyChanged("Price");
-                }
-            }
-        }
-        
-        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
-        
-        protected void RaisePropertyChanged(string propertyName) {
-            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
-            if ((propertyChanged != null)) {
-                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
-            }
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
-    [System.Runtime.Serialization.DataContractAttribute(Name="LightBulb", Namespace="http://schemas.datacontract.org/2004/07/LampService.Model")]
-    [System.SerializableAttribute()]
-    public partial class LightBulb : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
-        
-        [System.NonSerializedAttribute()]
-        private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private int IdField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private LampShop.LampService.LightBulbTint LightBulbTintField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string NameField;
-        
-        [global::System.ComponentModel.BrowsableAttribute(false)]
-        public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
-            get {
-                return this.extensionDataField;
-            }
-            set {
-                this.extensionDataField = value;
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public int Id {
-            get {
-                return this.IdField;
-            }
-            set {
-                if ((this.IdField.Equals(value) != true)) {
-                    this.IdField = value;
-                    this.RaisePropertyChanged("Id");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public LampShop.LampService.LightBulbTint LightBulbTint {
-            get {
-                return this.LightBulbTintField;
-            }
-            set {
-                if ((this.LightBulbTintField.Equals(value) != true)) {
-                    this.LightBulbTintField = value;
-                    this.RaisePropertyChanged("LightBulbTint");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public string Name {
-            get {
-                return this.NameField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.NameField, value) != true)) {
-                    this.NameField = value;
-                    this.RaisePropertyChanged("Name");
-                }
-            }
-        }
-        
-        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
-        
-        protected void RaisePropertyChanged(string propertyName) {
-            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
-            if ((propertyChanged != null)) {
-                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
-            }
-        }
-    }
-    
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
-    [System.Runtime.Serialization.DataContractAttribute(Name="LightBulbTint", Namespace="http://schemas.datacontract.org/2004/07/LampService.Model")]
-    public enum LightBulbTint : int {
-        
-        [System.Runtime.Serialization.EnumMemberAttribute()]
-        Light = 0,
-        
-        [System.Runtime.Serialization.EnumMemberAttribute()]
-        Dim = 1,
-        
-        [System.Runtime.Serialization.EnumMemberAttribute()]
-        Yellow = 2,
-        
-        [System.Runtime.Serialization.EnumMemberAttribute()]
-        Motley = 3,
-    }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ServiceModel.ServiceContractAttribute(Namespace="LampService", ConfigurationName="LampService.ILamp")]
     public interface ILamp {
         
         [System.ServiceModel.OperationContractAttribute(Action="LampService/ILamp/GetAll", ReplyAction="LampService/ILamp/GetAllResponse")]
-        LampShop.LampService.Lamp[] GetAll();
+        RepositoryInterface.Models.Lamp[] GetAll();
         
         [System.ServiceModel.OperationContractAttribute(Action="LampService/ILamp/GetAll", ReplyAction="LampService/ILamp/GetAllResponse")]
-        System.Threading.Tasks.Task<LampShop.LampService.Lamp[]> GetAllAsync();
+        System.Threading.Tasks.Task<RepositoryInterface.Models.Lamp[]> GetAllAsync();
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
@@ -254,11 +49,11 @@ namespace LampShop.LampService {
                 base(binding, remoteAddress) {
         }
         
-        public LampShop.LampService.Lamp[] GetAll() {
+        public RepositoryInterface.Models.Lamp[] GetAll() {
             return base.Channel.GetAll();
         }
         
-        public System.Threading.Tasks.Task<LampShop.LampService.Lamp[]> GetAllAsync() {
+        public System.Threading.Tasks.Task<RepositoryInterface.Models.Lamp[]> GetAllAsync() {
             return base.Channel.GetAllAsync();
         }
     }

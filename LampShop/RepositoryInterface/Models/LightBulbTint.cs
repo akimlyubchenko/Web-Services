@@ -1,4 +1,4 @@
-﻿namespace LampService.Model
+﻿namespace RepositoryInterface.Models
 {
 	public enum LightBulbTint
 	{

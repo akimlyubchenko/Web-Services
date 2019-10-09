@@ -1,0 +1,21 @@
+﻿@model LampShop.LampService.Lamp[]
+@{
+    ViewBag.Title = "Home Page";
+}
+
+<div class="jumbotron">
+	<h1>Catalog</h1>
+	<p class="lead">Top lamps</p>
+</div>
+
+@foreach (var lamp in @Model)
+{
+	<div class="card">
+		<h5 class="card-header">Lyubchenko Brand</h5>
+		<div class="card-body">
+			<h5 class="card-title">@lamp.Name</h5>
+			<p class="card-text">@lamp.Description</p>
+			<a href="#" class="btn btn-primary">Go somewhere</a>
+		</div>
+	</div>
+}

@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using System.ServiceModel;
+using LampModel = RepositoryInterface.Models.Lamp;
 
 namespace LampService
 {
@@ -7,6 +8,6 @@ namespace LampService
 	public interface ILamp
 	{
 		[OperationContract]
-		List<Model.Lamp> GetAll();
+		LampModel[] GetAll();
 	}
 }

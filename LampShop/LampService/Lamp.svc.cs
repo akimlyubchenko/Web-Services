@@ -1,25 +1,28 @@
 ﻿using System.Collections.Generic;
-using LampService.Model;
+using Repository;
+using RepositoryInterface;
+using RepositoryInterface.Models;
+using LampModel = RepositoryInterface.Models.Lamp;
 
 namespace LampService
 {
 	public class Lamp : ILamp
 	{
-		public List<Model.Lamp> GetAll()
+		private readonly ILampRepository _lampRepository;
+
+		public Lamp(/*ILampRepository lampRepository*/)
 		{
-			return new List<Model.Lamp> {
-				new Model.Lamp
-				{
-					Name = "lamp #1",
-					Description = "Best Lamp",
-					Price = 123.99,
-					LightBulb = new LightBulb
-					{
-						Name = "light bulb #1",
-						LightBulbTint = LightBulbTint.Light
-					}
-				}
-			};
+			_lampRepository = new LampRepository(new Repository.Contexts.LampDBContext());
+		}
+
+		public LampModel[] GetAll()
+		{
+			return _lampRepository.GetAll();
+		}
+
+		public LampModel Get(int id)
+		{
+			return new LampModel();
 		}
 	}
 }

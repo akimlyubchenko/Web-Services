@@ -1,6 +1,6 @@
 ﻿using System.Runtime.Serialization;
 
-namespace LampService.Model
+namespace RepositoryInterface.Models
 {
 	[DataContract]
 	public class Lamp
